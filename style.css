@@ -1,0 +1,105 @@
+/* font-family: 'Roboto', sans-serif */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.wrapper {
+    background: url(img/backgraund/hero_bg.png) no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+.header {}
+
+.container {}
+
+.header__container {
+    display: flex;
+    color: white;
+    width: 100%;
+    flex: 1;
+}
+
+.logo {
+    margin: 16px 0px 3px 40px;
+}
+
+.navigation__list {
+    margin: 50px 160px 20px 129px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 404px;
+}
+
+.navigation__item {}
+
+.contact {
+    display: flex;
+    margin: 51px 40px 23px 0px;
+}
+
+.location {
+    margin-right: 52px;
+}
+
+.number {}
+
+.main {}
+
+.hero {}
+
+.information {}
+
+.title {}
+
+.subtitle {}
+
+.hero__btn {}
+
+.btn {}
+
+.footer__information {}
+
+.sell {}
+
+.footer {}
+
+.functions {}
+
+.functions__item {}
+
+.hero-img {}
+
+.contant {}
