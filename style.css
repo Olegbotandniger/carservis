@@ -58,7 +58,6 @@ img {
     padding: 16px 0px 6px;
     border-bottom: 2px solid white;
     position: absolute;
-    height: 100%;
 }
 
 .container {
@@ -118,14 +117,21 @@ img {
     padding-top: 272px;
     color: white;
     font-size: 26px;
-    line-height: 50px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .hero__container {
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.information {}
+.information {
+    flex: 1;
+
+}
 
 .title {
     font-size: 40px;
@@ -157,16 +163,120 @@ img {
     border-width: 2px;
 }
 
-.footer__information {}
+.footer__information span {
+    color: palevioletred;
+}
 
-.sell {}
+.footer__information {
+    font-size: 20px;
+}
+
+.hero-advatege {}
+
+.transparant {
+    color: white;
+    justify-content: space-between;
+
+}
 
 .footer {}
 
-.functions {}
+.functions {
 
-.functions__item {}
+    display: flex;
+    justify-content: space-between;
 
-.hero-img {}
+}
 
-.contant {}
+.functions__item {
+    padding: 5px 5px;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid white;
+    margin-right: 100px;
+    font-size: 20px;
+    width: 500px;
+}
+
+.hero-img {
+    margin-bottom: 0;
+}
+
+.contant {
+    margin-top: 0;
+}
+
+@media (max-width:960px) {
+    .container {
+        max-width: 898px;
+    }
+
+    .logo {
+        max-width: 186px;
+        min-width: 81px;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 22%;
+    }
+
+    .information {
+        padding-left: 8%;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+}
+
+@media (max-widgh:769px; ) {
+    .container {
+        max-width: 722px;
+    }
+
+    .logo {
+        max-width: 142px;
+    }
+
+    .header .navigation__list,
+    .header__contact {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 170px;
+    }
+
+    .hero__btn {
+        flex-wrap: wrap;
+        row-gap: 14px;
+    }
+
+    .hero-advatege {
+        flex: 0 1 221px;
+        padding: 13px;
+    }
+
+}
+
+@media (max-widgh:480px; ) {
+    .container {
+        max-width: 90.8%;
+    }
+
+    .hero-advatege {
+        flex: 0 1 auto;
+        display: flex;
+        padding: 17px;
+        align-items: center;
+    }
+
+    .hero-img {
+        margin-right: 28px;
+        flex-shrink: 0;
+    }
+}
